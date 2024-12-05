@@ -3,6 +3,8 @@
 const display = document.getElementById("display");
 const validInput = /^[0-9+\-*/().]$/;
 const lastChar = display.value.slice(-1);
+
+
 //add function to window to put in global scope
 window.appendToDisplay = function(input){
     const display = document.getElementById('display');
@@ -15,9 +17,9 @@ window.appendToDisplay = function(input){
         return;
     }
 
-    if (validInput.test(input)) {
-        display.value += input;
-    }
+    // if (validInput.test(input)) {
+    //     display.value += input;
+    // }
 function clearDisplay(){
     display.value = "";
 }
